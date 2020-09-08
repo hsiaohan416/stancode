@@ -7,4 +7,4 @@ Welcome to watch my [DEMO VIDEOS](https://drive.google.com/drive/folders/1Gi3bn9
 
 ## Project source codes:
 * [Hangman Game](https://github.com/hsiaohan416/stancode/blob/master/SC_projects/games/hangman.py)
- * python semantics & syntax
+  * python semantics & syntax
