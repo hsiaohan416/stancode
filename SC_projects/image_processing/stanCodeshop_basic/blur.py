@@ -100,9 +100,7 @@ def blur(img):
                                edge5_pixel.green + edge6_pixel.green) // 6
             new_pixel.blue = (edge1_pixel.blue + edge2_pixel.blue + edge3_pixel.blue + edge4_pixel.blue +
                               edge5_pixel.blue + edge6_pixel.blue) // 6
-    # for x in range(1):
-    #     for y in range(1):
-    #         
+     
     return blank_img
 
 
