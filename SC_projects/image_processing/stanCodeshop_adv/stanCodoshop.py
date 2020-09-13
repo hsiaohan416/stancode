@@ -1,13 +1,10 @@
 """
-SC101 - Assignment3
-Adapted from Nick Parlante's Ghost assignment by
-Jerry Liao.
+Adapted from Nick Parlante's Ghost assignment by Jerry Liao.
 
+-----------------------------------------------
 name: Sharon Tseng
 file name: stanCodeshop.py
------------------------------------------------
 
-TODO:
 """
 
 import os
@@ -135,7 +132,6 @@ def solve(images):
 
 def jpgs_in_dir(dir):
     """
-    (provided, DO NOT MODIFY)
     Given the name of a directory, returns a list of the .jpg filenames
     within it.
 
@@ -172,7 +168,6 @@ def load_images(dir):
 
 
 def main():
-    # (provided, DO NOT MODIFY)
     args = sys.argv[1:]
     # We just take 1 argument, the folder containing all the images.
     # The load_images() capability is provided above.
