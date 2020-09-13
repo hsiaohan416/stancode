@@ -4,21 +4,17 @@ File: best_photoshop_award.py
 This file creates a photoshopped image
 that is going to compete for the 2020 Best
 Photoshop Award for SC101P.
-Please put all the images you use in image_contest folder
-and make sure to choose which award you are aiming at
 """
 from simpleimage import SimpleImage
 
 
 def main():
-    """
-    TODO:
-    """
     pangpang = SimpleImage('images/pang.jpg')
     pangpang.show()
     background = SimpleImage('images/ryan.jpg')
     background.show()
     pang_small = shrink(pangpang)
+    # make the size of the photo into 1/4
     pang_small = shrink(pang_small)
     pang_small = shrink(pang_small)
     result = de_bg(pang_small, background)
@@ -26,6 +22,7 @@ def main():
 
 
 def shrink(figure_img):
+    # shrink the photo with green background
     small_img = SimpleImage.blank(figure_img.width//2, figure_img.height//2)
     if figure_img.width % 2 == 1 or figure_img.height % 2 == 1:
         for x in range(0, figure_img.width-1, 2):
@@ -52,7 +49,7 @@ def shrink(figure_img):
     return small_img
 
 
-def de_bg(pang_small, background):
+def de_bg(green_bg_photo, background):
     blank_img = SimpleImage.blank(background.width, background.height)
     for x in range(pang_small.width):
         for y in range(pang_small.height):
